@@ -1,0 +1,137 @@
+<html><head> <link rel="stylesheet" href="css/bootstrap.css" />
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script src="jquery/jquery-1.9.1.js"></script> 
+       <script src="jquery/jquery-ui.js"></script>
+     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script>
+           function valid()
+	{
+if(document.contact_form.selcity.value=="---select--")
+		{
+			alert("Plz select city!");
+			return false;
+		}
+    }
+    </script>
+    <style>
+        div{
+            background-color:darkorange;
+            margin-right: 25;
+            margin-bottom: 15;
+            padding-right: 30;
+            margin-left: 20;
+            padding-left: 20;
+        }
+        h2{
+            font-family: fantasy;
+            height: 10%;
+            padding-top: 10;
+            text-decoration-style:double;
+            text-decoration-line:underline;
+            text-decoration-color:firebrick;
+            
+        }
+        body{
+            background-color:floralwhite;
+        }
+    </style>
+       
+       
+    </head>
+    <body>
+       
+            <h2 align="center">Registration form</h2>
+         <div class="contanier-fluid">
+            <form name="contact-form" class="form-horizontal" action="regsucess.html">
+               <div class="form-group">
+             <label class="control-label col-sm-4" >FullName</label>
+               <div class="col-sm-2">
+             <input type="text" class="form-control" placeholder="Firstname" required />
+            </div>
+                   <div class="col-sm-2">
+             <input type="text" class="form-control" placeholder="Middlename" required />
+            </div>
+                   <div class="col-sm-2">
+             <input type="text" class="form-control" placeholder="Lastname" required />
+            </div>
+            </div>
+                
+                <div class="form-group">
+        <label class="control-label col-sm-4" for="gender">Gender</label>
+        
+        <div class="col-sm-2">
+            <input type="radio" name="gender" value="male"/><label>Male</label>
+        </div>
+        <div class="col-sm-2">
+            <input type="radio" name="gender" value="female"/><label>Female</label>
+            
+        </div>
+        
+    </div>
+         <div class="form-group">
+             <label class="control-label col-sm-4">Email</label>
+               <div class="col-sm-4">
+             <input type="text"  class="form-control" placeholder="Email" required />
+            </div>
+            </div>
+               
+                 <div class="form-group">
+                    <label class="control-label col-sm-4">City</label>
+                     <div class="col-sm-4">
+                         <select class="form-control" name="selcity"> 
+                             <option>---select--</option>
+                             <option>Pune</option>
+                          <option>Mahableshwar</option>
+                          <option>Lucknow</option>
+                          <option>Nagpur</option>
+                          <option>Mumbai</option>
+                          <option>Punjab</option>
+                              <option>Pune</option>
+                          <option>Mahableshwar</option>
+                          <option>Lucknow</option>
+                          <option>Nagpur</option>
+                          <option>Mumbai</option>
+                          <option>Punjab</option>
+                         </select>
+                     </div>
+                </div>
+                <div class="form-group">
+             <label class="control-label col-sm-4">License Number</label>
+               <div class="col-sm-4">
+             <input type="number" class="form-control" placeholder=" LIcense Number" required />
+            </div>
+            </div>
+                
+              <div class="form-group">
+                    <label class="control-label col-sm-4">Blood Group</label>
+                     <div class="col-sm-4">
+                         <select class="form-control"> 
+                             <option>---select BG--</option>
+                             <option>A+</option>
+                          <option>A-</option>
+                          <option>B+</option>
+                          <option>B-</option>
+                          <option>AB+</option>
+                          <option>AB-</option>
+                              <option>O+</option>
+                          <option>O-</option>
+                         
+                         </select>
+                     </div>
+                </div>
+               
+               <div class="form-group">
+             <label class="control-label col-sm-4">Contact number</label>
+               <div class="col-sm-4">
+             <input type="number" class="form-control"  placeholder="Number" required />
+            </div>
+            </div>
+                
+                <div id="bt1" class="form-group"> 
+            <input type="submit" class="btn btn-success col-sm-offset-4 col-sm-2" value="regester"/>
+                    <input type="reset" class="btn btn-danger  col-sm-offset-1 col-sm-2" value="clear"/>
+            </div>
+            </form>
+        </div>
+    </body>
+</html>
